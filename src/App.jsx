@@ -178,7 +178,7 @@ function App() {
         </div>
 
         {/* Footer merged here */}
-        <footer className="w-full text-center bg-black text-white py-3 mt-[77px] ">
+        <footer className="w-full text-center bg-black text-white py-3 mt-[72px] ">
           © 2025 E-commerce | All rights reserved
         </footer>
       </section>
