@@ -50,7 +50,7 @@ function App() {
       </section>
 
       {/* Women + Men + Baby Section */}
-      <section className="snap-start min-h-screen flex items-center justify-center bg-[#4BADCF] ">
+      <section className="snap-start min-h-screen flex items-center justify-center bg-[#FFFDF0] ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] max-w-6xl">
           {/* Women’s Card */}
           <div className="relative rounded-xl overflow-hidden h-72 flex items-center">
@@ -120,12 +120,12 @@ function App() {
       </section>
 
       {/* Product Overview Section */}
-      <section className="snap-start  flex flex-col items-center justify-center bg-[#4BADCF] ">
+      <section className="snap-start  flex flex-col items-center justify-center bg-[#FFFDF0] ">
         <Products />
       </section>
 
       {/* Top Brands + Newsletter + Footer Section */}
-      <section className="snap-start min-h-screen flex flex-col items-center bg-[#4BADCF] ">
+      <section className="snap-start min-h-screen flex flex-col items-center bg-[#FFFDF0] ">
         {/* Top Brands Card */}
         <div className="bg-[#0c1c3a] p-6 rounded-[20px] w-full max-w-4xl text-white mt-[3%] mb-12">
           <h3 className="text-[35px] font-bold text-center mb-1 ">Top Brands Deal</h3>
@@ -178,7 +178,7 @@ function App() {
         </div>
 
         {/* Footer merged here */}
-        <footer className="w-full text-center bg-black text-white py-5 mt-[58px] ">
+        <footer className="w-full text-center bg-black text-white py-3 mt-[77px] ">
           © 2025 E-commerce | All rights reserved
         </footer>
       </section>
