@@ -1,69 +1,117 @@
-export function Footer() {
+export default function Footer() {
   return (
-    <>
-      <div className="bg-[#0c1c3a] p-6 rounded-[20px] w-full max-w-4xl text-white mt-[3%] mb-12">
-        <h3 className="text-[35px] font-bold text-center mb-1 ">
-          Top Brands Deal
-        </h3>
-        <p className="text-center text-[15px] mb-6">
-          Up To <span className="text-yellow-400 font-semibold">60% off</span>{" "}
-          on brands
-        </p>
-        <div className="flex justify-center items-center flex-wrap gap-4 px-4 mb-10">
-          {[
-            "https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg",
-            "https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Levis-logo-quer.svg/250px-Levis-logo-quer.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Adidas_2022_logo.svg/250px-Adidas_2022_logo.svg.png",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Puma_complete_logo.svg/330px-Puma_complete_logo.svg.png",
-          ].map((logo, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-md p-2 flex items-center justify-center h-14 w-24"
-            >
-              <img src={logo} alt="Brand Logo" className="h-8" />
-            </div>
-          ))}
+    <footer className="w-full bg-[#0c1c3a] text-white py-8 sm:py-10 lg:py-12 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        {/* Logo Section */}
+        <div className="text-center sm:text-left">
+          <h2 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3 sm:mb-4">HS-Store</h2>
+          <div className="flex justify-center sm:justify-start space-x-4">
+            <a href="#" className="hover:text-yellow-400 transition-colors">
+              <i className="fa-brands fa-facebook text-lg sm:text-xl"></i>
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition-colors">
+              <i className="fa-brands fa-twitter text-lg sm:text-xl"></i>
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition-colors">
+              <i className="fa-brands fa-instagram text-lg sm:text-xl"></i>
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition-colors">
+              <i className="fa-brands fa-youtube text-lg sm:text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Support */}
+        <div className="text-center sm:text-left">
+          <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Support</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Return & Exchange
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Shipping
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Size Chart
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Legal */}
+        <div className="text-center sm:text-left">
+          <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Legal</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Cookies Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Terms & Condition
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-yellow-400 transition-colors text-sm sm:text-base">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className="text-center sm:text-left">
+          <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Contact</h3>
+          <p className="text-xs sm:text-sm mb-3">
+            <i className="fa-solid fa-location-dot mr-2"></i>
+            Professional Services Hub <br />
+            123 Main Street, Suite 456 <br />
+            New York, NY 10001 USA
+          </p>
+          <p className="text-xs sm:text-sm mb-4">
+            <i className="fa-solid fa-envelope mr-2"></i>
+            help@storeone.com
+          </p>
+
+          <div className="flex justify-center sm:justify-start space-x-2 sm:space-x-4">
+            <img
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="Download on the App Store"
+              className="h-8 sm:h-10"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play"
+              className="h-8 sm:h-10"
+            />
+          </div>
         </div>
       </div>
 
-      {/* Newsletter Subscription Box */}
-      <div className="flex flex-col items-center text-center mb-12 mt-[4%]">
-        <h3 className="text-xl font-bold text-[#0c1c3a] mb-1">
-          Subscribe Newsletter
-        </h3>
-        <p className="text-sm text-black mb-6">
-          Subscribe to our email and get updates right in your inbox
-        </p>
-        <div className="flex items-center bg-gray-100 rounded-full px-6 py-3 shadow-md w-full max-w-md">
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            className="flex-grow bg-transparent outline-none text-gray-700 placeholder-gray-500"
-          />
-          <button className="ml-4 bg-yellow-400 hover:bg-yellow-500 rounded-full w-12 h-12 flex items-center justify-center transition duration-300 shadow">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 text-black"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3 10l9 4 9-9-9 13-3-4H3z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Footer merged here */}
-      <footer className="w-full text-center bg-black text-white py-3 mt-[7.8%] ">
+      <div className="text-center text-xs sm:text-sm text-gray-400 mt-8 sm:mt-10 border-t border-gray-700 pt-4 sm:pt-6">
         © 2025 E-commerce | All rights reserved
-      </footer>
-    </>
-  );
+      </div>
+    </footer>
+  )
 }
